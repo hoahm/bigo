@@ -7,6 +7,7 @@
 // Buoi	01
 //	BTTL:
 //		- http://codeforces.com/problemset/problem/691/A
+//		- http://codeforces.com/problemset/problem/677/A
 //
 
 package main
@@ -14,6 +15,7 @@ package main
 import (
 	"fmt"
 	buoi01bai01 "github.com/hoahm/bigo/buoi01/bai01"
+	buoi01bai02 "github.com/hoahm/bigo/buoi01/bai02"
 )
 
 func welcome() {
@@ -36,6 +38,7 @@ func printProjectMenu() {
 ==============================		
 Warm up:
 	1. Buoi 01 - Bai 01 (Fashion in Berland)
+	2. Buoi 02 - Bai 02 (Vanya and Fence)
 		`)
 }
 
@@ -47,6 +50,8 @@ func executeProject(projectID int) {
 		buoi01bai01.Execute()
 		break
 	case 2:
+		fmt.Printf("\n\nBuoi 01 - Bai 02\n")
+		buoi01bai02.Execute()
 		break
 	default:
 		fmt.Println("You have chosen the wrong project ID. Please try again!")
